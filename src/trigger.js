@@ -21,9 +21,6 @@ export default (name, components, locals) => {
       }
 
       try {
-        console.log('TRIGGER');
-
-
         return typeof locals === 'function' ?
           hook(locals(component)) :
           hook(locals);

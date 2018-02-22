@@ -21,7 +21,6 @@ export default (name, components, locals) => {
       }
 
       try {
-        console.log('AUTHORIZE');
         const authorized = typeof locals === 'function' ?
           hook(locals(component)) :
           hook(locals);
