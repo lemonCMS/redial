@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba203749-958b-4c50-a401-006dc0efad8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/provideHooks.js" afterPath="$PROJECT_DIR$/src/provideHooks.js" />
+      <change beforePath="$PROJECT_DIR$/src/authorize.js" afterPath="$PROJECT_DIR$/src/authorize.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="provideHooks.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="provideHooks.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/provideHooks.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorize.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authorize.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/authorize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state relative-caret-position="391">
+              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -128,9 +128,9 @@
         <option value="$PROJECT_DIR$/lib/authorize.js" />
         <option value="$PROJECT_DIR$/src/propName.js" />
         <option value="$PROJECT_DIR$/src/propNameAuth.js" />
-        <option value="$PROJECT_DIR$/src/authorize.js" />
         <option value="$PROJECT_DIR$/src/trigger.js" />
         <option value="$PROJECT_DIR$/src/provideHooks.js" />
+        <option value="$PROJECT_DIR$/src/authorize.js" />
       </list>
     </option>
   </component>
@@ -227,7 +227,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519303375374</updated>
-      <workItem from="1519303376655" duration="6238000" />
+      <workItem from="1519303376655" duration="6463000" />
     </task>
     <task id="LOCAL-00001" summary="add authorized hook">
       <created>1519304154028</created>
@@ -247,7 +247,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6238000" />
+    <option name="totallyTimeSpent" value="6463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="2493" height="1415" extended-state="6" />
@@ -353,11 +353,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/authorize.js">
+    <entry file="file://$PROJECT_DIR$/src/provideHooks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -369,13 +371,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/provideHooks.js">
+    <entry file="file://$PROJECT_DIR$/src/authorize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
