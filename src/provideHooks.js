@@ -10,7 +10,6 @@ export default hooks => ComposedComponent => {
     delete hooks.authorized;
   }
   if (Object.keys(hooks).length > 0) {
-    console.log('Hooks', hooks);
     ComposedComponent[propName] = hooks;
   }
   return ComposedComponent;
