@@ -1,4 +1,4 @@
-import propName from './propName';
+import propName from './propNameAuth';
 
 export default (name, components, locals) => {
   const promises = (Array.isArray(components) ? components : [components])
@@ -25,8 +25,7 @@ export default (name, components, locals) => {
           hook(locals(component)) :
           hook(locals);
 
-        console.log('HOI', authorized);
-        return authorized ? Promise.resolve(authorized) : Promise.reject('not authorized');
+        return authorized ? Promise.resolve() : Promise.reject('not authorized');
 
       } catch (err) {
         return Promise.reject(err);

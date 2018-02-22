@@ -1,1 +1,1 @@
-export default '@@redial-hooks';
+export default '@@redial-hooks-auth';
