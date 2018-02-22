@@ -25,7 +25,7 @@ export default (name, components, locals) => {
           hook(locals(component)) :
           hook(locals);
 
-        console.log(authorized);
+        console.log('HOI', authorized);
         authorized ? Promise.resolve(authorized) : Promise.reject('not authorized');
 
       } catch (err) {
