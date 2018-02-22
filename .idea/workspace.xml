@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba203749-958b-4c50-a401-006dc0efad8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/provideHooks.js" afterPath="$PROJECT_DIR$/src/provideHooks.js" />
+      <change beforePath="$PROJECT_DIR$/src/trigger.js" afterPath="$PROJECT_DIR$/src/trigger.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/provideHooks.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -58,8 +59,8 @@
       <file leaf-file-name="trigger.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/trigger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -68,8 +69,8 @@
       <file leaf-file-name="authorize.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/authorize.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="374">
+              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -129,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/propName.js" />
         <option value="$PROJECT_DIR$/src/propNameAuth.js" />
         <option value="$PROJECT_DIR$/src/authorize.js" />
+        <option value="$PROJECT_DIR$/src/trigger.js" />
         <option value="$PROJECT_DIR$/src/provideHooks.js" />
       </list>
     </option>
@@ -226,7 +228,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1519303375374</updated>
-      <workItem from="1519303376655" duration="5401000" />
+      <workItem from="1519303376655" duration="6191000" />
     </task>
     <task id="LOCAL-00001" summary="add authorized hook">
       <created>1519304154028</created>
@@ -246,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5401000" />
+    <option name="totallyTimeSpent" value="6191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="2493" height="1415" extended-state="6" />
@@ -352,18 +354,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/trigger.js">
+    <entry file="file://$PROJECT_DIR$/src/authorize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/authorize.js">
+    <entry file="file://$PROJECT_DIR$/src/trigger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="391">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -371,7 +373,7 @@
     <entry file="file://$PROJECT_DIR$/src/provideHooks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
