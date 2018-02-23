@@ -1,5 +1,5 @@
-import asyncMap from 'asyncMap';
-import trigger from 'trigger';
+import asyncMap from './asyncMap';
+import trigger from './trigger';
 
 export default (name, components, locals) => {
   return asyncMap(components, (component) => {

@@ -5,7 +5,7 @@
 Universal data fetching and route lifecycle management for React etc.
 
 ```bash
-$ npm install --save redial
+$ npm install --save redial-sync
 ```
 
 ## Why?
@@ -31,6 +31,7 @@ import React, { Component } from 'react';
 import { getSomething, getSomethingElse, trackDone } from 'actions/things';
 
 @provideHooks({
+  authorize: ({store}) => {stora.auth},
   fetch: ({ dispatch, params: { id } }) => dispatch(getSomething(id)),
   defer: ({ dispatch, params: { id } }) => dispatch(getSomethingElse(id)),
   done: ({ dispatch }) => dispatch(trackDone())
@@ -46,6 +47,7 @@ If you'd prefer to avoid using decorators, you can use `provideHooks` as a plain
 
 ```js
 const hooks = {
+  authorize: ({store}) => (store.auth), //returns boolen, fetch and defer only execute when true
   fetch: ({ dispatch, params: { id } }) => dispatch(getSomething(id)),
   defer: ({ dispatch, params: { id } }) => dispatch(getSomethingElse(id)),
   done: ({ dispatch }) => dispatch(trackDone())

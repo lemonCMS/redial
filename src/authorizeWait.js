@@ -1,5 +1,5 @@
-import asyncMap from 'asyncMap';
-import authorize from 'authorize';
+import asyncMap from './asyncMap';
+import authorize from './authorize';
 
 export default (name, components, locals) => {
   return asyncMap(components, (component) => {
