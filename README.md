@@ -1,11 +1,12 @@
-[![Build Status](https://img.shields.io/travis/markdalgleish/redial/master.svg?style=flat-square)](http://travis-ci.org/markdalgleish/redial) [![Coverage Status](https://img.shields.io/coveralls/markdalgleish/redial/master.svg?style=flat-square)](https://coveralls.io/r/markdalgleish/redial) [![npm](https://img.shields.io/npm/v/redial.svg?style=flat-square)](https://www.npmjs.com/package/redial)
+##This is a Fork
+Original sourcecode [markdalgleish](https://github.com/markdalgleish/redial)
 
 # redial
 
 Universal data fetching and route lifecycle management for React etc.
 
 ```bash
-$ npm install --save redial-sync
+$ npm install --save @lemoncms/redial
 ```
 
 ## Why?
@@ -102,7 +103,7 @@ In order to dispatch actions from within your hooks, you'll want to pass in a re
 ### Example server usage
 
 ```js
-import { trigger } from 'redial';
+import { trigger, authorize } from 'redial';
 
 import React from 'react';
 import { renderToString } from 'react-dom/server';
@@ -139,19 +140,28 @@ export default path => new Promise((resolve, reject) => {
       dispatch
     };
 
-    // Wait for async data fetching to complete, then render:
-    trigger('fetch', components, locals)
-      .then(() => {
-        const state = getState();
-        const html = renderToString(
-          <Provider store={store}>
-            <RouterContext {...renderProps} />
-          </Provider>
-        );
-
-        resolve({ html, state });
-      })
-      .catch(reject);
+    //Check if authorization, on success go fetch data     
+    authorize('authorize', components, locals).then(() => {
+        //Authorized
+        // Wait for async data fetching to complete, then render:
+        trigger('fetch', components, locals)
+              .then(() => {
+                const state = getState();
+                const html = renderToString(
+                  <Provider store={store}>
+                    <RouterContext {...renderProps} />
+                  </Provider>
+                );
+        
+                resolve({ html, state });
+              })
+              .catch(reject);
+    
+    }).catch((error) => {
+        //Not authorized
+        console.error(error);
+    });
+    
   });
 });
 ```
@@ -159,7 +169,7 @@ export default path => new Promise((resolve, reject) => {
 ### Example client usage
 
 ```js
-import { trigger } from 'redial';
+import { trigger, authorize } from 'redial';
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -201,17 +211,20 @@ export default container => {
         dispatch
       };
 
-      // Don't fetch data for initial route, server has already done the work:
-      if (window.INITIAL_STATE) {
-        // Delete initial data so that subsequent data fetches can occur:
-        delete window.INITIAL_STATE;
-      } else {
-        // Fetch mandatory data dependencies for 2nd route change onwards:
-        trigger('fetch', components, locals);
-      }
-
-      // Fetch deferred, client-only data dependencies:
-      trigger('defer', components, locals);
+       authorize('authorize', components, locals).then(() => {
+         // Don't fetch data for initial route, server has already done the work:
+         if (window.INITIAL_STATE) {
+           // Delete initial data so that subsequent data fetches can occur:
+           delete window.INITIAL_STATE;
+         } else {
+           // Fetch mandatory data dependencies for 2nd route change onwards:
+           trigger('fetch', components, locals);
+         }
+    
+         // Fetch deferred, client-only data dependencies:
+         trigger('defer', components, locals);
+       }).catch((error) => console.error(error))
+    
     });
   });
 
@@ -223,6 +236,23 @@ export default container => {
   ), container);
 };
 ```
+
+
+# Waiting for higher components
+When you have a child route that is depending on data fetched in a higher component you may use 
+
+
+```js
+ ...
+ import { triggerWait } from 'redial';
+ ...
+ 
+  triggerWait('fetch', components, locals);
+```
+
+This will wait for each fetch to finish before executing the next fetch.
+
+
 
 ## Boilerplates using redial
 
