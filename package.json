@@ -1,5 +1,5 @@
 {
-  "name": "@lemoncms/redial",
+  "name": "@wicked_query/redial",
   "version": "0.5.0",
   "description": "Universal data fetching and route lifecycle management for React etc.",
   "main": "lib/index.js",

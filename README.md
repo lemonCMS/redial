@@ -6,7 +6,7 @@ Original sourcecode [markdalgleish](https://github.com/markdalgleish/redial)
 Universal data fetching and route lifecycle management for React etc.
 
 ```bash
-$ npm install --save @lemoncms/redial
+$ npm install --save @wicked_query/redial
 ```
 
 ## Why?
