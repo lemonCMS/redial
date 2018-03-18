@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/lemoncms/redial#readme",
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-istanbul": "^0.3.20",
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-stage-0": "^7.0.0-beta.42",
     "chai": "^3.3.0",
     "coveralls": "^2.11.6",
     "mocha": "^2.3.3",
