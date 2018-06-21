@@ -1,13 +1,5 @@
-import provideHooks from './provideHooks';
-import trigger from './trigger';
-import triggerWait from './triggerWait';
-import authorize from './authorize';
-import authorizeWait from './authorizeWait';
-
-export default {
-  provideHooks,
-  trigger,
-  triggerWait,
-  authorize,
-  authorizeWait,
-};
+export {default as provideHooks} from './provideHooks';
+export {default as trigger} from './trigger';
+export {default as triggerWait} from './triggerWait';
+export {default as authorize} from './authorize';
+export {default as authorizeWait} from './authorizeWait';
