@@ -7,7 +7,7 @@ export default (name, components, locals) => {
     .filter(component => component)
 
     // Get component lifecycle hooks
-    .map(component => ({ component, hooks: component[propName] }))
+    .map(component => ({ component, hooks: component.default ? component.default[propName] : component[propName] }))
 
     // Filter out components that haven't been decorated
     .filter(({ hooks }) => hooks)
