@@ -9,6 +9,9 @@ Universal data fetching and route lifecycle management for React etc.
 $ npm install --save @wicked_query/redial
 ```
 
+## Demo
+[https://ultimatejs.babyblox.nl/data](https://ultimatejs.babyblox.nl/data)
+
 ## Why?
 
 When using something like [React Router](https://github.com/rackt/react-router), you'll want to ensure that all data for a set of routes is prefetched on the server before attempting to render.
